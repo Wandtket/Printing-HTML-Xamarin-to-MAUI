@@ -1,0 +1,19 @@
+{
+  "version": 2,
+  "dgSpecHash": "21J8GPx+MrwRuG8pt5tLVzkyFEy7zSqPXTFi0aChhbH55CSYiOl/I3zlR6wBS6no74iSDFYb8TxNKOSf5cEofg==",
+  "success": true,
+  "projectFilePath": "C:\\Users\\tyler.wandtke\\Desktop\\Printing MAUI\\Printing XAMARIN\\Printing XAMARIN.iOS\\Printing XAMARIN.iOS.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\tyler.wandtke\\.nuget\\packages\\system.numerics.vectors\\4.5.0\\system.numerics.vectors.4.5.0.nupkg.sha512",
+    "C:\\Users\\tyler.wandtke\\.nuget\\packages\\xamarin.essentials\\1.7.3\\xamarin.essentials.1.7.3.nupkg.sha512",
+    "C:\\Users\\tyler.wandtke\\.nuget\\packages\\xamarin.forms\\5.0.0.2401\\xamarin.forms.5.0.0.2401.nupkg.sha512"
+  ],
+  "logs": [
+    {
+      "code": "NU1803",
+      "level": "Warning",
+      "warningLevel": 1,
+      "message": "You are running the 'restore' operation with an 'http' source, 'http://amk-devops/Audubon%20Metals/_packaging/AudubonFeed/nuget/v3/index.json'. Support for 'http' sources will be removed in a future version."
+    }
+  ]
+}
