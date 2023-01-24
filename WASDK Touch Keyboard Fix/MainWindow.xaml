@@ -10,7 +10,26 @@
     xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
     mc:Ignorable="d">
 
-    <StackPanel Orientation="Horizontal" HorizontalAlignment="Center" VerticalAlignment="Center">
-        <Button x:Name="myButton" Click="myButton_Click">Click Me</Button>
-    </StackPanel>
+    <Grid RowSpacing="15" VerticalAlignment="Center" HorizontalAlignment="Center" Width="500">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="auto"/>
+            <RowDefinition Height="auto"/>
+            <RowDefinition Height="auto"/>
+            <RowDefinition Height="auto"/>
+        </Grid.RowDefinitions>
+
+        <TextBox PlaceholderText="Tap here to bring up touch keyboard" Width="250" Grid.Row="0"/>
+        
+        
+        <TextBlock Grid.Row="1" TextWrapping="Wrap">
+            Ensure you're on a tablet with no physical keyboard attached, if your tablet supports it don't forget to add your keyboard id to the "Devices.cs" extension.
+            Unfortunately this is the best way to detect when a user unplugs and plugs in a detachable keyboard (Think Surface Pro). All keyboard models should have the
+            same Id so once you get one model it should work for the rest.
+        </TextBlock>
+
+        <TextBlock x:Name="DeviceId" Text="After attaching the keyboard click the button to get the device Id" IsTextSelectionEnabled="True" Grid.Row="2"/>
+
+        <Button Content="Get Device Id" Grid.Row="3" Click="Button_Click"/>
+        
+    </Grid>
 </Window>

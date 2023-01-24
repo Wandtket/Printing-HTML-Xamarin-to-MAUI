@@ -13,6 +13,7 @@ using System.Collections.Generic;
 using System.IO;
 using System.Linq;
 using System.Runtime.InteropServices.WindowsRuntime;
+using WASDK_Touch_Keyboard_Fix.Extensions;
 using Windows.Foundation;
 using Windows.Foundation.Collections;
 
@@ -31,9 +32,9 @@ namespace WASDK_Touch_Keyboard_Fix
             this.InitializeComponent();
         }
 
-        private void myButton_Click(object sender, RoutedEventArgs e)
+        private void Button_Click(object sender, RoutedEventArgs e)
         {
-            myButton.Content = "Clicked";
+            DeviceId.Text = Devices.CurrentDeviceId;
         }
     }
 }

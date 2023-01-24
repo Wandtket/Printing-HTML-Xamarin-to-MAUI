@@ -79,8 +79,7 @@ namespace Printing_XAMARIN {
         ///	        &lt;/style&gt;
         ///	&lt;/head&gt;
         ///	
-        ///	&lt;body&gt;
-        ///		&lt;div class=&quot;S [rest of string was truncated]&quot;;.
+        ///	&lt;bod [rest of string was truncated]&quot;;.
         /// </summary>
         internal static string Test {
             get {

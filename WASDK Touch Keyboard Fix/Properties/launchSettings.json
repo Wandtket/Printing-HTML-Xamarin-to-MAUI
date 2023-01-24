@@ -10,7 +10,8 @@
     "Remote Machine": {
       "commandName": "MsixPackage",
       "remoteDebugEnabled": true,
-      "remoteDebugMachine": "172.16.31.49"
+      "remoteDebugMachine": "172.16.31.49",
+      "authenticationMode": "Universal"
     }
   }
 }

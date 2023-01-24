@@ -14,6 +14,7 @@ using System.Collections.Generic;
 using System.IO;
 using System.Linq;
 using System.Runtime.InteropServices.WindowsRuntime;
+using WASDK_Touch_Keyboard_Fix.Extensions;
 using Windows.ApplicationModel;
 using Windows.ApplicationModel.Activation;
 using Windows.Foundation;
@@ -42,10 +43,29 @@ namespace WASDK_Touch_Keyboard_Fix
         /// Invoked when the application is launched.
         /// </summary>
         /// <param name="args">Details about the launch request and process.</param>
-        protected override void OnLaunched(Microsoft.UI.Xaml.LaunchActivatedEventArgs args)
+        protected override async void OnLaunched(Microsoft.UI.Xaml.LaunchActivatedEventArgs args)
         {
             m_window = new MainWindow();
             m_window.Activate();
+
+            if (UI.IsTouchEnabled() == true)
+            {
+                Devices.Monitor();
+                Devices.StatusUpdated += Devices_StatusUpdated;
+
+                if (await Devices.IsPhysicalKeyboardAttachedToTablet() == true)
+                {
+                    UI.PhysicalKeyboardAttached = true;
+                }
+            }
+        }
+
+        private void Devices_StatusUpdated(DeviceType Type, bool IsConnected)
+        {
+            if (Type == DeviceType.Keyboard)
+            {
+                UI.PhysicalKeyboardAttached = IsConnected;
+            }
         }
 
         private Window m_window;
