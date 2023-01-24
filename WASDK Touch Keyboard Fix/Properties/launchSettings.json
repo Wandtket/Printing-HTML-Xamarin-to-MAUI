@@ -1,0 +1,16 @@
+{
+  "profiles": {
+    "WSL": {
+      "commandName": "WSL2",
+      "distributionName": ""
+    },
+    "WASDK Touch Keyboard Fix": {
+      "commandName": "MsixPackage"
+    },
+    "Remote Machine": {
+      "commandName": "MsixPackage",
+      "remoteDebugEnabled": true,
+      "remoteDebugMachine": "172.16.31.49"
+    }
+  }
+}

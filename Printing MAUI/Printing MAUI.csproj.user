@@ -3,7 +3,7 @@
   <PropertyGroup>
     <ActiveDebugFramework>net6.0-android</ActiveDebugFramework>
     <IsFirstTimeProjectOpen>False</IsFirstTimeProjectOpen>
-    <ActiveDebugProfile>Pixel 5 - API 30 (Android 11.0 - API 30)</ActiveDebugProfile>
+    <ActiveDebugProfile>Zebra Technologies MC33 (Android 8.1 - API 27)</ActiveDebugProfile>
     <SelectedPlatformGroup>Emulator</SelectedPlatformGroup>
     <DefaultDevice>pixel_5_-_api_30</DefaultDevice>
   </PropertyGroup>
